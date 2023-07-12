@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles2.css">
+    <title>Condiciones</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Desafio de condiciones</h1>
+      <ul>
+        <a href="./index.html"><ul><li>Problema #1</li></ul></a>
+        <a href="./problema2.html"><ul><li>Problema #2</li></ul></a>
+        <a href="./problema3.html"><ul><li>Problema #3</li></ul></a>
+      </ul>
+    </nav>
+    <body>
+      <section class="container">
+        <h1>Puedes llevar hasta 10 stickers en total</h1>
+<div class="imagegroup">
+    <div class="image-container">
+        <img src="./assets/img/css-sticker.jpg" alt="" class="sticker">
+        <label for="css">Stickers de CSS</label>
+        <input type="number" name="css" placeholder="Ingresa una cantidad" min="0" id="inputCss"
+        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" >
+    </div>
+    <div class="image-container">
+        <img src="./assets/img/js-sticker.jpg" alt="" class="sticker">
+        <label for="css">Stickers de Javascript</label>
+        <input type="number" name="js" placeholder="Ingresa una cantidad" min="0" id="inputJs"
+        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+    </div>               
+    <div class="image-container">
+        <img src="./assets/img/react-sticker.jpg" alt="" class="sticker">
+        <label for="css">Stickers de React</label>
+        <input type="number" name="react" placeholder="Ingresa una cantidad" min="0" id="inputReact"
+        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+    </div>               
+</div>
+        <p id="quantityTooMuch"><span id="quantity"></span></p>
+        <button onclick="evaluateSum()">Verificar</button>
+        <p class="subtitle">Problema #2</p>
+      </section>
+      
+<script src="./assets/js/script.js"></script>
+  </body>
+</html>
+
+
+<!-- Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
+disponibles. Para eso deberá existir un input debajo de cada imagen donde el
+usuario podrá ingresar un número. En caso de que la suma de todos los stickers
+seleccionados sea menor o igual 10 se indicará en un párrafo nuevo la cantidad de
+stickers llevados. Ejemplo "llevas 5 stickers" en cualquier otro caso se mostrará un
+texto que dice "Llevas demasiados stickers". (Total: 4 puntos)
+A. El párrafo muestra la cantidad de stickers seleccionados (2 puntos)
+B. El párrafo muestra que lleva demasiados stickers en caso de que la cantidad
+sea mayor que 10. (2 puntos) -->

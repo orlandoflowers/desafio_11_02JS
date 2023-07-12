@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 2rem;
+    background-color: lightgrey;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1 rem;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+a:hover{
+    background-color: gray;
+    color: white;
+}
+
+nav h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    height:90vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.imageBorder{
+    border: 2px solid red;
+}
